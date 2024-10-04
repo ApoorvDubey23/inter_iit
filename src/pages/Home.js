@@ -15,11 +15,11 @@ ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, T
 function Home() {
   const { user, isAuthenticated } = useAuth0();
   const navigate=useNavigate();
-  useEffect(() => {
+  useEffect(async() => {
     console.log(isAuthenticated);
     
     if(isAuthenticated){
-      window.sessionStorage.setItem("user",JSON.stringify(user));
+      await window.sessionStorage.setItem("user",JSON.stringify(user));
     }
   }, []);
 

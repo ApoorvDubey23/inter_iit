@@ -10,9 +10,9 @@ root.render(
 
 <Auth0Provider
     domain="dev-8z3agy7sryyg0ev2.us.auth0.com"
-    clientId="r2E4UBUkb5flJRe3Ybyv01hHEXsTi1v7"
+    clientId="lWjPlQfoQKiZ2cUuSXVPjdlY3Jz9W1bi"
     authorizationParams={{
-      redirect_uri: "http://localhost:3000/"
+      redirect_uri: "https://inter-iit-blockchain-frontend.vercel.app/"
     }}
   >
     <ModeProvider>
